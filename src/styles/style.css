@@ -40,3 +40,9 @@
 .btn:hover {
     -fx-opacity: 0.9;
 }
+
+.btnCb {
+    -fx-background-color : #FFF;
+    -fx-border-color: #355ECE;
+    -fx-text-fill:  #0C3988;
+}

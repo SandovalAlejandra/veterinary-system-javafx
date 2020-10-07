@@ -37,7 +37,7 @@
             </Pane>
             <Pane layoutY="70.0" prefHeight="430.0" prefWidth="210.0" style="-fx-background-color: #5438DC;">
                <children>
-                  <Button layoutY="152.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="210.0" style="-fx-background-color: #5438DC; -fx-border-color: #999;" text="Buscar" textFill="#f8f8f8">
+                  <Button layoutY="150.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="210.0" style="-fx-background-color: #5438DC; -fx-border-color: #999;" text="Buscar" textFill="#f8f8f8">
                      <font>
                         <Font name="Arial Bold" size="18.0" />
                      </font>
@@ -55,7 +55,7 @@
                         <Cursor fx:constant="TEXT" />
                      </cursor>
                   </Button>
-                  <Button layoutY="222.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="210.0" style="-fx-background-color: #5438DC; -fx-border-color: #999;" text="Registrar" textFill="#f8f8f8">
+                  <Button layoutY="220.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="210.0" style="-fx-background-color: #5438DC; -fx-border-color: #999;" text="Registrar" textFill="#f8f8f8">
                      <font>
                         <Font name="Arial Bold" size="18.0" />
                      </font>
@@ -63,12 +63,12 @@
                         <ColorAdjust />
                      </effect>
                   </Button>
-                  <Button layoutY="292.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="210.0" style="-fx-background-color: #5438DC; -fx-border-color: #999;" text="Reservar" textFill="#f8f8f8">
+                  <Button layoutY="290.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="210.0" style="-fx-background-color: #5438DC; -fx-border-color: #999;" text="Reservar" textFill="#f8f8f8">
                      <font>
                         <Font name="Arial Bold" size="18.0" />
                      </font>
                   </Button>
-                  <Button layoutY="362.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="210.0" style="-fx-background-color: #5438DC; -fx-border-color: #999;" text="Servicos" textFill="#f8f8f8">
+                  <Button layoutY="360.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="210.0" style="-fx-background-color: #5438DC; -fx-border-color: #999;" text="Servicos" textFill="#f8f8f8">
                      <font>
                         <Font name="Arial Bold" size="18.0" />
                      </font>
@@ -78,14 +78,13 @@
                         <Font name="System Bold" size="13.0" />
                      </font>
                   </Text>
-                  <ImageView fitHeight="78.0" fitWidth="88.0" layoutX="61.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="78.0" fitWidth="88.0" layoutX="66.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../assets/profile-user%20(1).png" />
                      </image>
                   </ImageView>
                </children>
             </Pane>
-            <ExpansionPanel layoutX="556.0" layoutY="134.0" />
             <GridPane layoutX="234.0" layoutY="154.0" prefHeight="325.0" prefWidth="543.0">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
