@@ -84,12 +84,12 @@
             <ComboBox fx:id="btnGrado" layoutX="513.0" layoutY="166.0" prefHeight="33.0" prefWidth="147.0" promptText="Seleccionar" styleClass="btnCb" />
             <ComboBox fx:id="btnGrado1" layoutX="513.0" layoutY="234.0" prefHeight="33.0" prefWidth="147.0" promptText="Seleccionar" styleClass="btnCb" />
             <TextField layoutX="507.0" layoutY="325.0" promptText="0.00" styleClass="inputTxt" />
+            <Text fill="#7399df" layoutX="241.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Baño" wrappingWidth="287.13671875">
+               <font>
+                  <Font name="Arial Bold" size="36.0" />
+               </font>
+            </Text>
          </children>
       </Pane>
-      <Text fill="#7399df" layoutX="253.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dueño" wrappingWidth="180.13671875">
-         <font>
-            <Font name="Arial Bold" size="36.0" />
-         </font>
-      </Text>
    </children>
 </AnchorPane>
