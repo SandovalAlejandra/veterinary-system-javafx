@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
@@ -12,11 +19,11 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.BuscarAdController">
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.BuscarAdController">
    <children>
       <Pane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: while;">
          <children>
-            <Pane prefHeight="70.0" prefWidth="800.0" style="-fx-background-color: #7399DF;">
+            <Pane prefHeight="70.0" prefWidth="800.0" styleClass="bgTop">
                <children>
                   <Text fill="#f5f5f5" fontSmoothingType="LCD" layoutX="27.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Veterinaria San Marcos">
                      <font>
@@ -27,10 +34,38 @@
             </Pane>
             <Pane layoutY="70.0" prefHeight="430.0" prefWidth="210.0" style="-fx-background-color: #5438DC;">
                <children>
-                  <Button layoutY="225.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="210.0" style="-fx-background-color: #5438DC;" text="Buscar" textFill="#f8f8f8">
+                  <Text fill="WHITE" layoutX="61.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Administrador">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="78.0" fitWidth="88.0" layoutX="66.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/profile-user%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutY="360.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="210.0" style="-fx-background-color: #5438DC; -fx-border-color: #999;" text="Servicos" textFill="#f8f8f8">
                      <font>
                         <Font name="Arial Bold" size="18.0" />
                      </font>
+                  </Button>
+                  <Button layoutY="290.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="210.0" style="-fx-background-color: #5438DC; -fx-border-color: #999;" text="Reservar" textFill="#f8f8f8">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutY="220.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="210.0" style="-fx-background-color: #5438DC; -fx-border-color: #999;" text="Registrar" textFill="#f8f8f8">
+                     <effect>
+                        <ColorAdjust />
+                     </effect>
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutY="150.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="210.0" style="-fx-background-color: #5438DC; -fx-border-color: #999;" text="Buscar" textFill="#f8f8f8">
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
                      <effect>
                         <ColorAdjust>
                            <input>
@@ -38,36 +73,13 @@
                            </input>
                         </ColorAdjust>
                      </effect>
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
                      <opaqueInsets>
                         <Insets />
                      </opaqueInsets>
-                     <cursor>
-                        <Cursor fx:constant="TEXT" />
-                     </cursor>
                   </Button>
-                  <Button layoutY="275.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="210.0" style="-fx-background-color: #5438DC;" text="Registrar" textFill="#f8f8f8">
-                     <font>
-                        <Font name="Arial Bold" size="18.0" />
-                     </font>
-                     <effect>
-                        <ColorAdjust />
-                     </effect>
-                  </Button>
-                  <Button layoutY="325.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="210.0" style="-fx-background-color: #5438DC;" text="Reservar" textFill="#f8f8f8">
-                     <font>
-                        <Font name="Arial Bold" size="18.0" />
-                     </font>
-                  </Button>
-                  <Button layoutY="375.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="210.0" style="-fx-background-color: #5438DC;" text="Servicos" textFill="#f8f8f8">
-                     <font>
-                        <Font name="Arial Bold" size="18.0" />
-                     </font>
-                  </Button>
-                  <Text fill="WHITE" layoutX="64.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Administrador">
-                     <font>
-                        <Font size="13.0" />
-                     </font>
-                  </Text>
                </children>
             </Pane>
             <ExpansionPanel layoutX="556.0" layoutY="134.0" />
@@ -81,13 +93,13 @@
                   <Font name="Arial Bold" size="36.0" />
                </font>
             </Text>
-            <TextField layoutX="241.0" layoutY="147.0" promptText="Nonnbre" />
-            <TextField layoutX="243.0" layoutY="203.0" promptText="Telefono" />
-            <TextField layoutX="556.0" layoutY="147.0" promptText="DNI" />
-            <TextField layoutX="556.0" layoutY="203.0" promptText="Direccion" />
-            <TextField layoutX="243.0" layoutY="357.0" promptText="Nonnbre" />
-            <TextField layoutX="556.0" layoutY="357.0" promptText="Raza" />
-            <Button layoutX="568.0" layoutY="451.0" mnemonicParsing="false" style="-fx-background-color: #5438DC;" text="Agregar Paciente" textFill="WHITE">
+            <TextField layoutX="241.0" layoutY="147.0" promptText="Nonnbre" styleClass="inputTxt" />
+            <TextField layoutX="243.0" layoutY="203.0" promptText="Telefono" styleClass="inputTxt" />
+            <TextField layoutX="556.0" layoutY="147.0" promptText="DNI" styleClass="inputTxt" />
+            <TextField layoutX="556.0" layoutY="203.0" promptText="Direccion" styleClass="inputTxt" />
+            <TextField layoutX="243.0" layoutY="357.0" promptText="Nonnbre" styleClass="inputTxt" />
+            <TextField layoutX="556.0" layoutY="357.0" promptText="Raza" styleClass="inputTxt" />
+            <Button layoutX="568.0" layoutY="428.0" mnemonicParsing="false" style="-fx-background-color: #5438DC;" styleClass="btn" text="Agregar Paciente" textFill="WHITE">
                <font>
                   <Font name="Arial Black" size="12.0" />
                </font>
@@ -99,6 +111,5 @@
             </Button>
          </children>
       </Pane>
-      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
    </children>
 </AnchorPane>
